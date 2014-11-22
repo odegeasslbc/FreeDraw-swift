@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		621D9ABD1A208F5C00DE2C1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D9ABC1A208F5C00DE2C1A /* AppDelegate.swift */; };
+		621D9ABF1A208F5C00DE2C1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D9ABE1A208F5C00DE2C1A /* ViewController.swift */; };
+		621D9AC21A208F5C00DE2C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621D9AC01A208F5C00DE2C1A /* Main.storyboard */; };
+		621D9AC41A208F5C00DE2C1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621D9AC31A208F5C00DE2C1A /* Images.xcassets */; };
+		621D9AC71A208F5C00DE2C1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621D9AC51A208F5C00DE2C1A /* LaunchScreen.xib */; };
+		621D9AD31A208F5C00DE2C1A /* FreeDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D9AD21A208F5C00DE2C1A /* FreeDrawTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		621D9ACD1A208F5C00DE2C1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 621D9AAF1A208F5C00DE2C1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 621D9AB61A208F5C00DE2C1A;
+			remoteInfo = FreeDraw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		621D9AB71A208F5C00DE2C1A /* FreeDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		621D9ABB1A208F5C00DE2C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621D9ABC1A208F5C00DE2C1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		621D9ABE1A208F5C00DE2C1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		621D9AC11A208F5C00DE2C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		621D9AC31A208F5C00DE2C1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		621D9AC61A208F5C00DE2C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		621D9ACC1A208F5C00DE2C1A /* FreeDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		621D9AD11A208F5C00DE2C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621D9AD21A208F5C00DE2C1A /* FreeDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDrawTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		621D9AB41A208F5C00DE2C1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621D9AC91A208F5C00DE2C1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		621D9AAE1A208F5C00DE2C1A = {
+			isa = PBXGroup;
+			children = (
+				621D9AB91A208F5C00DE2C1A /* FreeDraw */,
+				621D9ACF1A208F5C00DE2C1A /* FreeDrawTests */,
+				621D9AB81A208F5C00DE2C1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		621D9AB81A208F5C00DE2C1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				621D9AB71A208F5C00DE2C1A /* FreeDraw.app */,
+				621D9ACC1A208F5C00DE2C1A /* FreeDrawTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		621D9AB91A208F5C00DE2C1A /* FreeDraw */ = {
+			isa = PBXGroup;
+			children = (
+				621D9ABC1A208F5C00DE2C1A /* AppDelegate.swift */,
+				621D9ABE1A208F5C00DE2C1A /* ViewController.swift */,
+				621D9AC01A208F5C00DE2C1A /* Main.storyboard */,
+				621D9AC31A208F5C00DE2C1A /* Images.xcassets */,
+				621D9AC51A208F5C00DE2C1A /* LaunchScreen.xib */,
+				621D9ABA1A208F5C00DE2C1A /* Supporting Files */,
+			);
+			path = FreeDraw;
+			sourceTree = "<group>";
+		};
+		621D9ABA1A208F5C00DE2C1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				621D9ABB1A208F5C00DE2C1A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		621D9ACF1A208F5C00DE2C1A /* FreeDrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				621D9AD21A208F5C00DE2C1A /* FreeDrawTests.swift */,
+				621D9AD01A208F5C00DE2C1A /* Supporting Files */,
+			);
+			path = FreeDrawTests;
+			sourceTree = "<group>";
+		};
+		621D9AD01A208F5C00DE2C1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				621D9AD11A208F5C00DE2C1A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		621D9AB61A208F5C00DE2C1A /* FreeDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621D9AD61A208F5C00DE2C1A /* Build configuration list for PBXNativeTarget "FreeDraw" */;
+			buildPhases = (
+				621D9AB31A208F5C00DE2C1A /* Sources */,
+				621D9AB41A208F5C00DE2C1A /* Frameworks */,
+				621D9AB51A208F5C00DE2C1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeDraw;
+			productName = FreeDraw;
+			productReference = 621D9AB71A208F5C00DE2C1A /* FreeDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		621D9ACB1A208F5C00DE2C1A /* FreeDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621D9AD91A208F5C00DE2C1A /* Build configuration list for PBXNativeTarget "FreeDrawTests" */;
+			buildPhases = (
+				621D9AC81A208F5C00DE2C1A /* Sources */,
+				621D9AC91A208F5C00DE2C1A /* Frameworks */,
+				621D9ACA1A208F5C00DE2C1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				621D9ACE1A208F5C00DE2C1A /* PBXTargetDependency */,
+			);
+			name = FreeDrawTests;
+			productName = FreeDrawTests;
+			productReference = 621D9ACC1A208F5C00DE2C1A /* FreeDrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		621D9AAF1A208F5C00DE2C1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "刘炳辰";
+				TargetAttributes = {
+					621D9AB61A208F5C00DE2C1A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					621D9ACB1A208F5C00DE2C1A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 621D9AB61A208F5C00DE2C1A;
+					};
+				};
+			};
+			buildConfigurationList = 621D9AB21A208F5C00DE2C1A /* Build configuration list for PBXProject "FreeDraw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 621D9AAE1A208F5C00DE2C1A;
+			productRefGroup = 621D9AB81A208F5C00DE2C1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				621D9AB61A208F5C00DE2C1A /* FreeDraw */,
+				621D9ACB1A208F5C00DE2C1A /* FreeDrawTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		621D9AB51A208F5C00DE2C1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621D9AC21A208F5C00DE2C1A /* Main.storyboard in Resources */,
+				621D9AC71A208F5C00DE2C1A /* LaunchScreen.xib in Resources */,
+				621D9AC41A208F5C00DE2C1A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621D9ACA1A208F5C00DE2C1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		621D9AB31A208F5C00DE2C1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621D9ABF1A208F5C00DE2C1A /* ViewController.swift in Sources */,
+				621D9ABD1A208F5C00DE2C1A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621D9AC81A208F5C00DE2C1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621D9AD31A208F5C00DE2C1A /* FreeDrawTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		621D9ACE1A208F5C00DE2C1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 621D9AB61A208F5C00DE2C1A /* FreeDraw */;
+			targetProxy = 621D9ACD1A208F5C00DE2C1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		621D9AC01A208F5C00DE2C1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621D9AC11A208F5C00DE2C1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		621D9AC51A208F5C00DE2C1A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621D9AC61A208F5C00DE2C1A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		621D9AD41A208F5C00DE2C1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		621D9AD51A208F5C00DE2C1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		621D9AD71A208F5C00DE2C1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FreeDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		621D9AD81A208F5C00DE2C1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FreeDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		621D9ADA1A208F5C00DE2C1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FreeDrawTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeDraw.app/FreeDraw";
+			};
+			name = Debug;
+		};
+		621D9ADB1A208F5C00DE2C1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FreeDrawTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeDraw.app/FreeDraw";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		621D9AB21A208F5C00DE2C1A /* Build configuration list for PBXProject "FreeDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621D9AD41A208F5C00DE2C1A /* Debug */,
+				621D9AD51A208F5C00DE2C1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621D9AD61A208F5C00DE2C1A /* Build configuration list for PBXNativeTarget "FreeDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621D9AD71A208F5C00DE2C1A /* Debug */,
+				621D9AD81A208F5C00DE2C1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		621D9AD91A208F5C00DE2C1A /* Build configuration list for PBXNativeTarget "FreeDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621D9ADA1A208F5C00DE2C1A /* Debug */,
+				621D9ADB1A208F5C00DE2C1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 621D9AAF1A208F5C00DE2C1A /* Project object */;
+}
