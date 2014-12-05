@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		621D9ABD1A208F5C00DE2C1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D9ABC1A208F5C00DE2C1A /* AppDelegate.swift */; };
 		621D9ABF1A208F5C00DE2C1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D9ABE1A208F5C00DE2C1A /* ViewController.swift */; };
-		621D9AC21A208F5C00DE2C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621D9AC01A208F5C00DE2C1A /* Main.storyboard */; };
 		621D9AC41A208F5C00DE2C1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621D9AC31A208F5C00DE2C1A /* Images.xcassets */; };
 		621D9AC71A208F5C00DE2C1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621D9AC51A208F5C00DE2C1A /* LaunchScreen.xib */; };
 		621D9AD31A208F5C00DE2C1A /* FreeDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D9AD21A208F5C00DE2C1A /* FreeDrawTests.swift */; };
+		621D9ADD1A208FEB00DE2C1A /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D9ADC1A208FEB00DE2C1A /* DrawView.swift */; };
+		621D9ADF1A208FFF00DE2C1A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D9ADE1A208FFF00DE2C1A /* Line.swift */; };
+		621D9AED1A209C5F00DE2C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621D9AEC1A209C5F00DE2C1A /* Main.storyboard */; };
+		62243A471A2F3E290054565F /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62243A461A2F3E290054565F /* SCLAlertView.swift */; };
+		62243A481A2F3E290054565F /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62243A461A2F3E290054565F /* SCLAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +34,15 @@
 		621D9ABB1A208F5C00DE2C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		621D9ABC1A208F5C00DE2C1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		621D9ABE1A208F5C00DE2C1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		621D9AC11A208F5C00DE2C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		621D9AC31A208F5C00DE2C1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		621D9AC61A208F5C00DE2C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		621D9ACC1A208F5C00DE2C1A /* FreeDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		621D9AD11A208F5C00DE2C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		621D9AD21A208F5C00DE2C1A /* FreeDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDrawTests.swift; sourceTree = "<group>"; };
+		621D9ADC1A208FEB00DE2C1A /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		621D9ADE1A208FFF00DE2C1A /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		621D9AEC1A209C5F00DE2C1A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		62243A461A2F3E290054565F /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				621D9ABC1A208F5C00DE2C1A /* AppDelegate.swift */,
+				621D9ADC1A208FEB00DE2C1A /* DrawView.swift */,
+				621D9ADE1A208FFF00DE2C1A /* Line.swift */,
+				62243A461A2F3E290054565F /* SCLAlertView.swift */,
 				621D9ABE1A208F5C00DE2C1A /* ViewController.swift */,
-				621D9AC01A208F5C00DE2C1A /* Main.storyboard */,
+				621D9AEC1A209C5F00DE2C1A /* Main.storyboard */,
 				621D9AC31A208F5C00DE2C1A /* Images.xcassets */,
 				621D9AC51A208F5C00DE2C1A /* LaunchScreen.xib */,
 				621D9ABA1A208F5C00DE2C1A /* Supporting Files */,
@@ -192,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				621D9AC21A208F5C00DE2C1A /* Main.storyboard in Resources */,
+				621D9AED1A209C5F00DE2C1A /* Main.storyboard in Resources */,
 				621D9AC71A208F5C00DE2C1A /* LaunchScreen.xib in Resources */,
 				621D9AC41A208F5C00DE2C1A /* Images.xcassets in Resources */,
 			);
@@ -213,7 +223,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				621D9ABF1A208F5C00DE2C1A /* ViewController.swift in Sources */,
+				621D9ADF1A208FFF00DE2C1A /* Line.swift in Sources */,
+				62243A471A2F3E290054565F /* SCLAlertView.swift in Sources */,
 				621D9ABD1A208F5C00DE2C1A /* AppDelegate.swift in Sources */,
+				621D9ADD1A208FEB00DE2C1A /* DrawView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62243A481A2F3E290054565F /* SCLAlertView.swift in Sources */,
 				621D9AD31A208F5C00DE2C1A /* FreeDrawTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +250,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		621D9AC01A208F5C00DE2C1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				621D9AC11A208F5C00DE2C1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		621D9AC51A208F5C00DE2C1A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -337,8 +343,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreeDraw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -347,8 +355,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreeDraw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -405,6 +415,7 @@
 				621D9AD81A208F5C00DE2C1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		621D9AD91A208F5C00DE2C1A /* Build configuration list for PBXNativeTarget "FreeDrawTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +424,7 @@
 				621D9ADB1A208F5C00DE2C1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
