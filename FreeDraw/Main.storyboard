@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -99,34 +99,6 @@
                                     <action selector="colorTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nqE-cQ-BKF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wed-rZ-SBs">
-                                <rect key="frame" x="227" y="70" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="GSl-ZP-lUd">
-                                        <variation key="widthClass=compact" constant="46"/>
-                                    </constraint>
-                                    <constraint firstAttribute="width" constant="46" id="gym-a6-bwL"/>
-                                </constraints>
-                                <state key="normal" title="Yellow">
-                                    <color key="titleColor" red="0.90242569934036099" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="GSl-ZP-lUd"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="200" y="55" width="45" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="GSl-ZP-lUd"/>
-                                        <exclude reference="gym-a6-bwL"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="colorTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nRu-Uq-v4z"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xj-Vu-fiT">
                                 <rect key="frame" x="281" y="70" width="46" height="30"/>
                                 <constraints>
@@ -144,8 +116,7 @@
                                         <exclude reference="gCj-E3-wvg"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="254" y="55" width="45" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="gCj-E3-wvg"/>
                                         <exclude reference="p5z-lC-jtG"/>
@@ -204,8 +175,7 @@
                                         <exclude reference="wFN-Wy-Ic6"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="350" y="75" width="34" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="uML-hp-fOg"/>
                                         <include reference="wFN-Wy-Ic6"/>
@@ -254,8 +224,7 @@
                                         <exclude reference="i31-gl-OcO"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="238" y="75" width="92" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="N68-UM-NTj"/>
                                         <include reference="i31-gl-OcO"/>
@@ -281,9 +250,6 @@
                                                 <exclude reference="EKb-dF-JZc"/>
                                                 <exclude reference="Sum-Dy-3An"/>
                                             </mask>
-                                        </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="488"/>
                                         </variation>
                                     </imageView>
                                     <view clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSK-nS-IEg" customClass="DrawView" customModule="FreeDraw" customModuleProvider="target">
@@ -315,11 +281,8 @@
                                                 <exclude reference="Ub5-Fk-z2g"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=compact" ambiguous="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                        </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="488"/>
+                                        <variation key="widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="-108" y="14" width="800" height="500"/>
                                         </variation>
                                     </view>
                                 </subviews>
@@ -378,8 +341,7 @@
                                         <exclude reference="zZ7-fU-ZKH"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="113" width="400" height="492"/>
+                                <variation key="widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="V7v-iE-13L"/>
                                         <include reference="xSK-nS-IEg"/>
@@ -475,6 +437,33 @@
                                 </state>
                                 <connections>
                                     <action selector="showDate:" destination="vXZ-lx-hvc" eventType="touchDown" id="ohw-wP-xTj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wed-rZ-SBs">
+                                <rect key="frame" x="227" y="70" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="GSl-ZP-lUd">
+                                        <variation key="widthClass=compact" constant="46"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="46" id="gym-a6-bwL"/>
+                                </constraints>
+                                <state key="normal" title="Yellow">
+                                    <color key="titleColor" red="0.90242569934036099" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GSl-ZP-lUd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GSl-ZP-lUd"/>
+                                        <exclude reference="gym-a6-bwL"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="colorTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nRu-Uq-v4z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -698,7 +687,6 @@
                                 <include reference="oaV-HW-4qU"/>
                                 <include reference="WCm-WT-NEe"/>
                                 <include reference="4fj-y2-2tr"/>
-                                <include reference="wed-rZ-SBs"/>
                                 <include reference="8Xj-Vu-fiT"/>
                                 <include reference="Kde-Gr-KPC"/>
                                 <include reference="wp2-g3-cU7"/>
@@ -710,6 +698,7 @@
                                 <include reference="bDf-m4-fKd"/>
                                 <include reference="8S5-S0-38r"/>
                                 <include reference="uSC-jg-1n9"/>
+                                <include reference="wed-rZ-SBs"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="LFJ-pS-kyM"/>
