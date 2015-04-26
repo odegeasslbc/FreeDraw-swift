@@ -8,6 +8,7 @@
 
 import UIKit
 import AssetsLibrary
+import MobileCoreServices
 
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,UIPickerViewDelegate{
     
@@ -39,7 +40,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     //保存画图到相册
     @IBAction func save(sender: AnyObject) {
         
-        var theDrawView = drawView as DrawView
+        var theDrawView = drawView as! DrawView
         //遍历整个view的所有subview，找到画板view
         
         //for sub in self.view.subviews {
@@ -56,9 +57,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
                     UIImageWriteToSavedPhotosAlbum(image,nil,nil,nil)
                     //弹出 保存成功 提示
                     let alert1 = SCLAlertView()
-                    alert1.showSuccess(self, title: "保存成功", subTitle: "^_^", closeButtonTitle: "OK", duration: 0)
+                    alert1.showSuccess("保存成功", subTitle: "^_^", closeButtonTitle: "OK", duration: 0)
                 })
-                alert.showInfo(self, title: "确定保存？", subTitle: "图片将被保存到相册", closeButtonTitle: "NO", duration: 0)
+                alert.showInfo("确定保存？", subTitle: "图片将被保存到相册", closeButtonTitle: "NO", duration: 0)
         
         
         
@@ -75,19 +76,19 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         let pickerC = UIImagePickerController()
         
         pickerC.delegate = self
-        var theDrawView = drawView as DrawView
+        var theDrawView = drawView as! DrawView
         //theDrawView.backgroundColor = UIColor.whiteColor()
         //theDrawView.alpha = 0.5
         self.presentViewController(pickerC, animated: true, completion: nil)
         
     }
     
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: NSDictionary!) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         
         self.dismissViewControllerAnimated(true, completion: nil);
-        let gotImage = info[UIImagePickerControllerOriginalImage] as UIImage
+        let gotImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         let beginImage = CIImage(image: gotImage)
-        var theDrawView = drawView as DrawView
+        var theDrawView = drawView as! DrawView
         
         imageView.image = gotImage
         holderView.addSubview(imageView)
@@ -95,7 +96,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         holderView.sendSubviewToBack(imageView)
         
     }
-    
+
     //清空所有
     @IBAction func clearTapped() {
         //alert.show()
@@ -103,7 +104,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         newAlert.addButton("YES"){
             self.loadView()
         }
-        newAlert.showError(self, title: "are you sure", subTitle: "delect all you have done?", closeButtonTitle: "NO", duration: 0)
+        newAlert.showError("are you sure", subTitle: "delect all you have done?", closeButtonTitle: "NO", duration: 0)
     }
     
     func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
@@ -121,7 +122,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     }
     //删除线条
     @IBAction func remove(sender: AnyObject) {
-        var theDrawView = drawView as DrawView
+        var theDrawView = drawView as! DrawView
         for var i = 0;i<steps;i++ {
             theDrawView.removeLastLine()
         }
@@ -129,7 +130,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     //改变线条颜色
     @IBAction func colorTapped(button: UIButton!) {
-        var theDrawView = drawView as DrawView
+        var theDrawView = drawView as! DrawView
         var color : UIColor = UIColor.blackColor()
         
         if (button.titleLabel?.text == "Red") {
@@ -151,7 +152,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     //改变线条粗细
     @IBAction func tintChanged(sender: AnyObject) {
-        var theDrawView = drawView as DrawView
+        var theDrawView = drawView as! DrawView
         let nbr = Int(tintSlider.value * 10) + 1
         theDrawView.lineWidth = nbr
     }
@@ -164,7 +165,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         alert.addButtonWithTitle("yes")
         alert.addButtonWithTitle("no")
         alert.delegate = self
-        
+        datePicker.hidden = true
         picker.delegate = self
         let numbers = NSArray(arrayLiteral: "1","2","3","4","5")
         let rect = CGRectMake(self.view.frame.width/2, self.view.frame.height/2, 200, 300)

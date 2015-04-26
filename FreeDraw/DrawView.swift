@@ -19,15 +19,17 @@ class DrawView: UIView {
     super.init(coder: aDecoder)
   }
   
-  override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-    lastPoint = touches.anyObject()?.locationInView(self)
-    
-    self.superview!.bringSubviewToFront(self)
-  }
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        let touch = touches.first as! UITouch
+        let point = touch.locationInView(self)
+        lastPoint = point
+        self.superview!.bringSubviewToFront(self)
+    }
   
-  override func touchesMoved(touches: (NSSet!), withEvent event: UIEvent)  {
-    var newPoint = touches.anyObject()?.locationInView(self)
-    lines.append(Line(start: lastPoint, end: newPoint!, color: drawColor, width:CGFloat(lineWidth)))
+  override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent)  {
+    var newTouch = touches.first as! UITouch
+    let newPoint = newTouch.locationInView(self)
+    lines.append(Line(start: lastPoint, end: newPoint, color: drawColor, width:CGFloat(lineWidth)))
     lastPoint = newPoint
     
     self.setNeedsDisplay()
